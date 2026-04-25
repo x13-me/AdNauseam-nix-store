@@ -15,8 +15,8 @@
         system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
-          version = "3.28.2";
-          hash = "sha256-aiBPUw7J7jaVaPd1eyEcZkIPhAAWP0RkA85GfNVlpnc=";
+          version = "3.28.4";
+          hash = "sha256-eWupa9Gc1UyAvDM8lU6E5k43yLvGa/d+/SUXJA3lLRY=";
           adnauseam = pkgs.fetchzip {
             pname = "adnauseam";
             url = "https://github.com/dhowe/AdNauseam/releases/download/v${version}/adnauseam-${version}.chromium.zip";
