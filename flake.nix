@@ -2,7 +2,7 @@
   description = "AdNauseam Chromium extension — unpacked";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
   };
 
   outputs =
@@ -15,8 +15,8 @@
         system:
         let
           pkgs = nixpkgs.legacyPackages.${system};
-          version = "3.28.4";
-          hash = "sha256-eWupa9Gc1UyAvDM8lU6E5k43yLvGa/d+/SUXJA3lLRY=";
+          version = "3.28.8";
+          hash = "sha256-+BRtcnOk+jx9zMKc0+m5cUpYNLpgYeuJKBk57otK2VA=";
           adnauseam = pkgs.fetchzip {
             pname = "adnauseam";
             url = "https://github.com/dhowe/AdNauseam/releases/download/v${version}/adnauseam-${version}.chromium.zip";
